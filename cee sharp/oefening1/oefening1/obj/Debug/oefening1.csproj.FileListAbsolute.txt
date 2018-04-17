@@ -1,0 +1,6 @@
+C:\Users\Dirk-Jan de Beijer\Source\Repos\FHICTSoftwareS2v2\Algoritmiek\oefening1\oefening1\bin\Debug\oefening1.exe.config
+C:\Users\Dirk-Jan de Beijer\Source\Repos\FHICTSoftwareS2v2\Algoritmiek\oefening1\oefening1\bin\Debug\oefening1.exe
+C:\Users\Dirk-Jan de Beijer\Source\Repos\FHICTSoftwareS2v2\Algoritmiek\oefening1\oefening1\bin\Debug\oefening1.pdb
+C:\Users\Dirk-Jan de Beijer\Source\Repos\FHICTSoftwareS2v2\Algoritmiek\oefening1\oefening1\obj\Debug\oefening1.csproj.CoreCompileInputs.cache
+C:\Users\Dirk-Jan de Beijer\Source\Repos\FHICTSoftwareS2v2\Algoritmiek\oefening1\oefening1\obj\Debug\oefening1.exe
+C:\Users\Dirk-Jan de Beijer\Source\Repos\FHICTSoftwareS2v2\Algoritmiek\oefening1\oefening1\obj\Debug\oefening1.pdb

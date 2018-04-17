@@ -1,0 +1,14 @@
+C:\Users\Dirk-Jan de Beijer\Source\Repos\FHICTSoftwareS2v2\Algoritmiek\oefening1\Algorithms\bin\Debug\Algorithms.exe.config
+C:\Users\Dirk-Jan de Beijer\Source\Repos\FHICTSoftwareS2v2\Algoritmiek\oefening1\Algorithms\bin\Debug\Algorithms.exe
+C:\Users\Dirk-Jan de Beijer\Source\Repos\FHICTSoftwareS2v2\Algoritmiek\oefening1\Algorithms\bin\Debug\Algorithms.pdb
+C:\Users\Dirk-Jan de Beijer\Source\Repos\FHICTSoftwareS2v2\Algoritmiek\oefening1\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+C:\Users\Dirk-Jan de Beijer\Source\Repos\FHICTSoftwareS2v2\Algoritmiek\oefening1\Algorithms\obj\Debug\Algorithms.exe
+C:\Users\Dirk-Jan de Beijer\Source\Repos\FHICTSoftwareS2v2\Algoritmiek\oefening1\Algorithms\obj\Debug\Algorithms.pdb
+C:\Users\Dirk-Jan de Beijer\Source\Repos\FHICTSoftwareS2v2\Algoritmiek\oefening1\Algorithms\obj\Debug\Algorithms.csprojResolveAssemblyReference.cache
+C:\Users\Dirk-Jan de Beijer\Desktop\Algoritmiek\oefening1\Algorithms\bin\Debug\Algorithms.exe.config
+C:\Users\Dirk-Jan de Beijer\Desktop\Algoritmiek\oefening1\Algorithms\bin\Debug\Algorithms.exe
+C:\Users\Dirk-Jan de Beijer\Desktop\Algoritmiek\oefening1\Algorithms\bin\Debug\Algorithms.pdb
+C:\Users\Dirk-Jan de Beijer\Desktop\Algoritmiek\oefening1\Algorithms\obj\Debug\Algorithms.csprojResolveAssemblyReference.cache
+C:\Users\Dirk-Jan de Beijer\Desktop\Algoritmiek\oefening1\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+C:\Users\Dirk-Jan de Beijer\Desktop\Algoritmiek\oefening1\Algorithms\obj\Debug\Algorithms.exe
+C:\Users\Dirk-Jan de Beijer\Desktop\Algoritmiek\oefening1\Algorithms\obj\Debug\Algorithms.pdb
