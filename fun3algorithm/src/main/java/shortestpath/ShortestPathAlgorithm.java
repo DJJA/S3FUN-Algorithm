@@ -1,5 +1,6 @@
 package shortestpath;
 
+import stopwatch.TimeStamp;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.ArrayList;
@@ -16,46 +17,6 @@ public class ShortestPathAlgorithm {
         }
         return false;
     }
-
-//    private static List<Node> getConnectedNodes(Graaf graaf, Node startNode, Node stopNode, List<Node> nodesPassedThrough){
-//
-//        List<Node> connectedNodes = new ArrayList<Node>();
-//
-//        for(Link edge : (List<Link>)graaf) {
-//            if(edge.PointA.getId() == startNode.getId() && edge.getDirection() != Direction.BTOA){
-//                if(!isNodeInList(nodesPassedThrough, edge.PointB)){
-//                    connectedNodes.add(new Node(edge.getPointB().getId()));
-//                }
-//            }
-//            else if (edge.PointB.getId() == startNode.getId() && edge.Direction != Direction.ATOB){
-//                if(!isNodeInList(nodesPassedThrough, edge.PointA)){
-//                    connectedNodes.add(new Node(edge.getPointA().getId()));
-//                }
-//            }
-//        }
-//
-//        for (Node node : connectedNodes)
-//        {
-//            if (node.getId() != stopNode.getId())
-//            {
-//                List<Node> curNodesPassedThrough = new ArrayList<Node>();
-//                //curNodesPassedThrough.add AddRange(nodesPassedThrough);
-//                //curNodesPassedThrough.Add(node);
-//
-//                //node.IgnoredNodes = curNodesPassedThrough;
-//                //node.ConnectedNodes = GetConnectedNodes(graaf, node, stopNode, curNodesPassedThrough);
-//            }
-//        }
-//
-//        return connectedNodes;
-//    }
-//
-//    private static List<Route> getPossibleRoutes(Graaf graaf, Node startNode, Node stopNode, List<Node> nodesPassedThrough){
-//
-//
-//
-//        throw new NotImplementedException();
-//    }
 
     public static Graaf graaf1 = new Graaf(Arrays.asList(
 
@@ -183,10 +144,23 @@ public class ShortestPathAlgorithm {
 
     private static List<Route> GetPossibleRoutes(Graaf graaf, Node startNode, Node stopNode, List<Node> nodesPassedThrough)
     {
+        TimeStamp tsGetConnectedNodes = new TimeStamp();
+        tsGetConnectedNodes.init();
+        tsGetConnectedNodes.setBegin("Start getConnectedNodes");
         startNode.setConnectedNodes(GetConnectedNodes(graaf, startNode, stopNode, nodesPassedThrough));
+        tsGetConnectedNodes.setEnd("Finished getConnectedNodes");
+        System.out.println("[GetPossibleRoutes]Time spent getting connected nodes: " +tsGetConnectedNodes);
 
+        TimeStamp tsGetRoutes = new TimeStamp();
+        tsGetRoutes.init();
+        tsGetRoutes.setBegin("Start getRoutes");
         List<Route> routes = GetConnectedNodeRoutes(startNode, graaf);
+        tsGetRoutes.setEnd("Finished getRoutes");
+        System.out.println("[GetPossibleRoutes]Time spent converting connected nodes to routes: " + tsGetRoutes);
 
+        TimeStamp tsFiltering = new TimeStamp();
+        tsFiltering.init();
+        tsFiltering.setBegin("Start filtering");
         List<Route> routesWithEnding = new ArrayList<Route>();
         for (Route route : routes)
         {
@@ -194,6 +168,8 @@ public class ShortestPathAlgorithm {
             if (lastLink.PointA.getId() == stopNode.getId() || lastLink.PointB.getId() == stopNode.getId())
                 routesWithEnding.add(route);
         }
+        tsFiltering.setEnd("Finished filtering");
+        System.out.println("[GetPossibleRoutes]Time spent filtering out routes not reaching the end node: " + tsFiltering);
 
         return routesWithEnding;
     }
