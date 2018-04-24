@@ -46,4 +46,12 @@ public class Link {
         Direction = Direction.BOTH;
     }
 
+    public Link(char pointA, char pointB, int distance, Direction direction)
+    {
+        PointA = new Node(pointA);
+        PointB = new Node(pointB);
+        Distance = distance;
+        Direction = direction;
+    }
+
 }

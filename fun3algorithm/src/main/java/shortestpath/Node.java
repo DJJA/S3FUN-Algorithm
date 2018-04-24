@@ -17,6 +17,10 @@ public class Node {
         return connectedNodes;
     }
 
+    public void setConnectedNodes(List<Node> connectedNodes) {
+        this.connectedNodes = connectedNodes;
+    }
+
     public Node(char id) {
         this.id = id;
         this.connectedNodes = new ArrayList<Node>();
