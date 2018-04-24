@@ -57,7 +57,7 @@ public class ShortestPathAlgorithm {
 //        throw new NotImplementedException();
 //    }
 
-    public static Graaf graaf1 = (Graaf)Arrays.asList(
+    public static Graaf graaf1 = new Graaf(Arrays.asList(
 
             new Link('A', 'B', 5),
             new Link('A', 'D', 6),
@@ -67,9 +67,9 @@ public class ShortestPathAlgorithm {
             new Link('B', 'E', 7),
             new Link('B', 'C', 2),
             new Link('E', 'C', 3)
-    );
+    ));
 
-    public static Graaf graaf1WithDirections = (Graaf)Arrays.asList(
+    public static Graaf graaf1WithDirections = new Graaf(Arrays.asList(
 
             new Link('A', 'B', 5, Direction.ATOB),
             new Link('A', 'D', 6),
@@ -79,9 +79,9 @@ public class ShortestPathAlgorithm {
             new Link('B', 'E', 7, Direction.BTOA),
             new Link('B', 'C', 2),
             new Link('E', 'C', 3)
-    );
+    ));
 
-    public static Graaf graaf2 = (Graaf)Arrays.asList(
+    public static Graaf graaf2 = new Graaf(Arrays.asList(
 
             //region outer ring
             new Link('A', 'E', 4),
@@ -137,7 +137,7 @@ public class ShortestPathAlgorithm {
             new Link('F', 'G', 1),
             new Link('B', 'G', 5)
 
-    );
+    ));
 
 
     public static List<Route> GetPossibleRoutes(Graaf graaf, char pointStart, char pointDestination, int maxNodesPerRoute)
@@ -301,7 +301,7 @@ public class ShortestPathAlgorithm {
     {
         List<Node> connectedNodes = new ArrayList<Node>();
 
-        for (Link route : graaf)
+        for (Link route : graaf.getLinks())
         {
             // Check if route has nodeStart in it
             if (route.PointA.getId() == inputNode.getId() && route.Direction != Direction.BTOA)
