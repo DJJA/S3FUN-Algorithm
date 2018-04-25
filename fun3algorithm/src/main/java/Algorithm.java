@@ -11,7 +11,7 @@ public class Algorithm {
         TimeStamp tsGraafPosibleRoutes = new TimeStamp();
         tsGraafPosibleRoutes.init();
         tsGraafPosibleRoutes.setBegin("Start getPossibleRoutes");
-        List<Route> routes = ShortestPathAlgorithm.GetPossibleRoutes(ShortestPathAlgorithm.graaf1, 'A', 'F');
+        List<Route> routes = ShortestPathAlgorithm.GetPossibleRoutes(ShortestPathAlgorithm.graafOverdrevenEdges, 'A', 'I');
         tsGraafPosibleRoutes.setEnd("Finished getPossibleRouts");
 
         TimeStamp tsGraafSort = new TimeStamp();
@@ -33,16 +33,16 @@ public class Algorithm {
 
 
 
-        List<Route> routes2 = ShortestPathAlgorithm.GetPossibleRoutes(ShortestPathAlgorithm.graaf1WithDirections, 'A', 'F');
-
-        ShortestPathAlgorithm.BubleSortRoutes(routes2);
-
-        System.out.println();
-        System.out.println("Possible routes (graaf1 w/ direction):");
-        for (Route route : routes2)
-        {
-            System.out.println(route.ToShortString());
-        }
+//        List<Route> routes2 = ShortestPathAlgorithm.GetPossibleRoutes(ShortestPathAlgorithm.graaf1WithDirections, 'A', 'F');
+//
+//        ShortestPathAlgorithm.BubleSortRoutes(routes2);
+//
+//        System.out.println();
+//        System.out.println("Possible routes (graaf1 w/ direction):");
+//        for (Route route : routes2)
+//        {
+//            System.out.println(route.ToShortString());
+//        }
 
     }
 }
